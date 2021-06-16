@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+.maincontent{
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 600px;
+	top: 50%;
+	margin-top: -300px;
+	left: 0;
+}
+
+#mainc1{
+	left:0%;
+
+}
+#mainc2{
+
+	left:100%;
+}
+#mainc3{
+
+	left:200%;
+}
+#mainc4{
+
+	left:300%;
+}
+#mainc5{
+
+	left:400%;
+}
+#mainc6{
+
+	left:500%;
+}
+.section [id="slide01"]:checked ~ .maincontent{transform:translateX(0%);}
+.section [id="slide02"]:checked ~ .maincontent{transform:translateX(-100%);}
+.section [id="slide03"]:checked ~ .maincontent{transform:translateX(-200%);}
+.section [id="slide04"]:checked ~ .maincontent{transform:translateX(-300%);}
+.section [id="slide05"]:checked ~ .maincontent{transform:translateX(-400%);}
+.section [id="slide06"]:checked ~ .maincontent{transform:translateX(-500%);}
+
+.mmc{
+	width: 1200px;
+	height: 500px;
+	top: 50%;
+	margin-top: -250px;
+	left: 50%;
+	margin-left: -600px;
+	position: absolute;
+	z-index: inherit;
+}
+.mmc h2{
+	width: 700px;
+	height: 30px;
+	float: right;
+	display: block;
+	margin-right: 20px;
+	margin-top: 75px;
+	font-size: 20px;
+}
+.mmc p{
+	display:block;
+	float: right;
+	width: 700px;
+	height: 300px;
+	margin-right: 20px;
+	margin-top: 30px;
+	text-align: left;
+	color: black;
+	font-size: 12px;
+	font-family: "YD윤고딕 310";
+	overflow: auto;
+	line-height: 25px;
+	padding: 0px;
+}
+
+.mmc img{
+	position: absolute;
+	z-index: inherit;
+	height: 400px;
+	width: 400px;
+	top: 50%;
+	margin-top: -200px;
+	left: 20px;;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 30px;
+}
+
+@media screen and (max-width:996px){
+	.mmc{
+		position: relative;
+		width: 600px;
+		height: 600px;
+		margin-left: -300px;
+		top: 300px;
+	}
+	.mmc h2{
+		position: absolute;
+		font-size: 16px;
+		float: none;
+		bottom: 250px;
+		overflow: auto;
+		height: 50px;
+	}
+	.mmc p{
+		position: absolute;
+		width: 600px;
+		height: 250px;
+		bottom: 0px;
+	}
+	.mmc img{
+		position: absolute;
+		height: 250px;
+		width: 250px;
+		left: 50%;
+		margin-left: -125px;
+		top: 200px;
+	}
+}
+
+@media screen and (max-width:600px){
+	
+	.mmc{
+		position: relative;
+		width: 400px;
+		height: 600px;
+		margin-left: -200px;
+		left: 50%;
+		top: 250px;
+	}
+	.mmc h2{
+		position: absolute;
+		font-size: 16px;
+		float: none;
+		bottom: 300px;
+		overflow: auto;
+		height: 50px;
+	}
+	.mmc p{
+		position: absolute;
+		left: 25px;
+		width: 350px;
+		height: 300px;
+		float: none;
+		bottom: 0px;
+	}
+	.mmc img{
+		height: 200px;
+		width: 200px;
+		left: 50%;
+		margin-left: -100px;
+		top: 200px;
+	}
+}

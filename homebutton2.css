@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.outer1 {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.inner1 {
+  width: inherit;
+  text-align: center;
+  height: inherit;
+  z-index: 3;
+}
+
+.inner1 label { 
+  font-size: .8em; 
+  line-height: 4em;
+  text-transform: uppercase;
+  color: #4c3d31;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner1:before, .inner1:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: inherit;
+  background: #4c3d31;
+  left: 0;
+  transition: all .3s ease-in;
+}
+
+.inner1:before {
+  top: 48%; 
+  transform: rotate(45deg);  
+}
+
+.inner1:after {  
+  bottom: 48%;
+  transform: rotate(-45deg);  
+}
+
+.outer1:hover label {
+  opacity: 1;
+}
+
+.outer1:hover .inner1:before,
+.outer1:hover .inner1:after {
+  transform: rotate(0);
+}
+
+.outer1:hover .inner1:before {
+  top: 0;
+}
+
+.outer1:hover .inner1:after {
+  bottom: 0;
+}
+
+.inner1 label > a{
+	margin: 0px;
+	position: relative;
+	top: -12px;
+	z-index: 4;
+	font-size: 10px;
+	text-decoration: none;
+	color: #4c3d31;
+}
+@media screen and (max-width:996px){
+	.outer{
+		top: 15px;
+	}
+}
+@media screen and (max-width:600px){
+	.outer{
+		top: 5px;
+	}
+}
