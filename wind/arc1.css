@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+.circular-progress{
+	position: absolute;
+	display: inline-block;
+	float: left;
+	bottom: -200px;
+	left: 50%;
+	margin-left: -150px;
+	z-index: 6;
+}
+.circular-progress-circle{
+	position: relative;
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0px 5px 50px black;
+}
+.circular-progress-circle-1{
+	position: relative;
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0px 5px 50px gray;
+}
+.segment{
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:150px;
+	height:150px;
+	background: blue;
+	transform-origin: 0 0;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+#poin1{
+	background-color: #27221e;
+}
+
+#poin1:hover{
+	background-color: #e6e3e0;
+	animation:change 0.3s forwards;
+}
+@keyframes change{
+	from {border: 0px solid white;}
+	to {border: 3px solid white;}
+}
+#poin2{
+	background-color: #27221e;
+}
+#poin2:hover{
+	background-color: #e6e3e0;
+	animation:change 0.3s forwards;
+}
+
+#poin3{
+	background-color: #27221e;
+}
+#poin3:hover{
+	background-color: #e6e3e0;
+	animation:change 0.3s forwards;
+}
+
+#poin4{
+	background-color: #27221e;
+}
+#poin4:hover{
+	background-color: #e6e3e0;
+	animation:change 0.3s forwards;
+}
+#poin5{
+	background-color: #27221e;
+}
+#poin5:hover{
+	background-color: #e6e3e0;
+	animation:change 0.3s forwards;
+}
+#poin6{
+	background-color: #27221e;
+}
+#poin6:hover{
+	background-color: #e6e3e0;
+	animation:change 0.3s forwards;
+}
